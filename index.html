@@ -1,40 +1,58 @@
-
 <!doctype html>
-<html>
+<html lang="pt">
 
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+    <title>Apresentação</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+
+    <style>
+        .reveal .slides section {
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="reveal">
-<div class="slides">
+    <div class="reveal">
+        <div class="slides">
 
-<section><img src='slides/slide-1.png' style='width:100%'></section>
-<section><img src='slides/slide-2.png' style='width:100%'></section>
-<section><img src='slides/slide-3.png' style='width:100%'></section>
-<section><img src='slides/slide-4.png' style='width:100%'></section>
-<section><img src='slides/slide-5.png' style='width:100%'></section>
-<section><img src='slides/slide-6.png' style='width:100%'></section>
-<section><img src='slides/slide-7.png' style='width:100%'></section>
-<section><img src='slides/slide-8.png' style='width:100%'></section>
-<section><img src='slides/slide-9.png' style='width:100%'></section>
+            <section data-background-image="slides/slide-1.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-2.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-3.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-4.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-5.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-6.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-7.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-8.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-9.png" data-background-size="contain"></section>
 
+        </div>
+    </div>
 
-</div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
-
-<script>
-Reveal.initialize();
-</script>
+    <script>
+        Reveal.initialize({
+            width: 1920,
+            height: 1080,
+            
+            margin: 0,
+            minScale: 0.2,
+            maxScale: 2.0,
+            
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide' /
+        });
+    </script>
 
 </body>
-
 </html>
