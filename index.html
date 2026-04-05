@@ -5,14 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Apresentação</title>
+    <title>Apresentação - Vinícius Alvarez</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
 
     <style>
+        /* Garante que não existam margens brancas ao redor da imagem */
         .reveal .slides section {
             padding: 0;
+        }
+        /* Cor de fundo para combinar com o PDF enquanto a imagem carrega */
+        .reveal {
+            background-color: #0a1128;
         }
     </style>
 </head>
@@ -22,15 +27,15 @@
     <div class="reveal">
         <div class="slides">
 
-            <section data-background-image="slides/slide-1.png" data-background-size="contain"></section>
-            <section data-background-image="slides/slide-2.png" data-background-size="contain"></section>
-            <section data-background-image="slides/slide-3.png" data-background-size="contain"></section>
-            <section data-background-image="slides/slide-4.png" data-background-size="contain"></section>
-            <section data-background-image="slides/slide-5.png" data-background-size="contain"></section>
-            <section data-background-image="slides/slide-6.png" data-background-size="contain"></section>
-            <section data-background-image="slides/slide-7.png" data-background-size="contain"></section>
-            <section data-background-image="slides/slide-8.png" data-background-size="contain"></section>
-            <section data-background-image="slides/slide-9.png" data-background-size="contain"></section>
+            <section data-background-image="slides/slide-1.png" data-background-size="100% 100%"></section>
+            <section data-background-image="slides/slide-2.png" data-background-size="100% 100%"></section>
+            <section data-background-image="slides/slide-3.png" data-background-size="100% 100%"></section>
+            <section data-background-image="slides/slide-4.png" data-background-size="100% 100%"></section>
+            <section data-background-image="slides/slide-5.png" data-background-size="100% 100%"></section>
+            <section data-background-image="slides/slide-6.png" data-background-size="100% 100%"></section>
+            <section data-background-image="slides/slide-7.png" data-background-size="100% 100%"></section>
+            <section data-background-image="slides/slide-8.png" data-background-size="100% 100%"></section>
+            <section data-background-image="slides/slide-9.png" data-background-size="100% 100%"></section>
 
         </div>
     </div>
@@ -38,19 +43,21 @@
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
 
     <script>
+        // Inicialização corrigida
         Reveal.initialize({
+            // Proporção baseada no seu PDF (geralmente 16:9)
             width: 1920,
             height: 1080,
             
             margin: 0,
-            minScale: 0.2,
+            minScale: 0.1,
             maxScale: 2.0,
             
             hash: true,
             controls: true,
             progress: true,
             center: true,
-            transition: 'slide' /
+            transition: 'slide' // Removida a barra que causava erro
         });
     </script>
 
